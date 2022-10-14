@@ -13,7 +13,7 @@ auto lo
 iface lo inet loopback
 
 # The primary network interface
-auto hotplug ens33
+auto ens33
 iface ens33 inet static
 address 10.10.10.22
 netmask 255.255.255.0
