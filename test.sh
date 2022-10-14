@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "Hello World"
-hostnamectl set-hostname test
+sudo hostnamectl set-hostname test
