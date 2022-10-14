@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Hello World"
 sudo hostnamectl set-hostname SRV-LIN1-02
-cat <<EOF > /etc/network/interface
+sudo cat <<EOF > /etc/network/interface
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
 
