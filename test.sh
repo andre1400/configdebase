@@ -2,12 +2,13 @@
 echo "Welcome to my World"
 
 # Changer le hostname
-sudo hostnamectl set-hostname SRV-LIN1-02
+host_F=SRV-LIN1-02
+sudo hostnamectl set-hostname $host_F
 
 # Interface ip static
 #bash -c (interpréter la commande -c , pour executer la commande cat)(<< toutes ses lignes qui vont etre écrites dans /etc/network/interfaces qui sera ecraser grace à ">")
 interfaces_F="/etc/network/interfaces"
-sudo bash -c "cat << EOF > /etc/network/interfaces
+sudo bash -c "cat << EOF >$interfaces_F
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
 
